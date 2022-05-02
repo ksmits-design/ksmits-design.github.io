@@ -126,6 +126,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 1rem;
 }
 
@@ -413,7 +414,7 @@ footer {
 
 .footer__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
 }
 

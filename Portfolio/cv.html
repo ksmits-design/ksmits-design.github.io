@@ -10,19 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/view.css">
    
 </head>
 <body>
+    <!-- ----------NAV------------ -->
     <nav>
         <div class="container nav__container">
             <div class="logo">
                 
                 <a href="index.html">
                     <img src="./images/ksmits.logowhite.svg" class="ksmitslogo" alt="">
-                </a></div>
+                    
+                </a>
+                <img src="./images/construction.png" alt="" style="max-width:50px"></div>
  
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
@@ -33,19 +37,22 @@
 
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-
         </div>
     </nav>
-    
-    <section class="projectview">
-    <div class="container container__projectview">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWNzggphb0KvP37udsxheG8%2FFedEx-Dashboards%3Fpage-id%3D2%253A5%26node-id%3D1545%253A81%26viewport%3D419%252C48%252C0.18%26scaling%3Dscale-down%26starting-point-node-id%3D1545%253A55" allowfullscreen></iframe>
+
+
+
+    <section>
+    <div class="container">
+        <iframe
+        src="./Documents/CV/CV_EN.pdf"
+        frameBorder="0"
+        scrolling="auto"
+        height=""
+        width="100%">
+        </iframe>
     </div>
-
-
-        
     </section>
-
 
 <!-- ----------Footer------------ -->
 
@@ -99,8 +106,28 @@
         <small> &copy; KRST Design </small>
     </div>
 </footer>
-    
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
-    
-    </body>
-    </html>
+  
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+        });
+    </script>
+  
+</body>
+</html>
