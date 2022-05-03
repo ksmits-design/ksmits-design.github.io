@@ -13,7 +13,20 @@ iframe {
     align-items: center;
     justify-content: center;
 }
+.projectview2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .container__video {
-    align-self: center;
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+/* 
+.container__video {
+    padding: auto;
+} */
