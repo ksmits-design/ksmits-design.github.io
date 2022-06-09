@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PleX Dashboard</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- GOOGLE FONTSw -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <object data="./images/logoPleX.svg" type="image/svg+xml"></object>
+                    <h2>Ple<span class="succes">X</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="icon material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="icon material-icons-sharp">home</span>
+                    <h3>Home</h3>
+                </a>
+                <a href="#">
+                    <span class="icon material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="icon material-icons-sharp">storage</span>
+                    <h3>Projecten</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="#">
+                    <span class="icon material-icons-sharp">outlined_flag</span>
+                    <h3>Keuzes</h3>
+                </a>
+                <a href="#">
+                    <span class="icon material-icons-sharp">groups</span>
+                    <h3>Groepen</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <!-- MAIN-SECTION -->
+        <main>
+            <div class="title">
+            <span class="icon material-icons-sharp">storage</span>
+            <h3>Projecten</h3>
+            <span class="material-icons-sharp">keyboard_arrow_right</span>
+            <h3>S4</h3>
+            <span class="material-icons-sharp">keyboard_arrow_right</span>
+            <h3 class="current">Bezetting</h3>
+            </div>
+            
+            <div class="title_wrapper">
+                <div class="avatar"><h2>J</h2><h2>D</h2></div>
+                <h1>Welkom terug, John</h1>
+            </div>
+
+            <div class="filter_wrapper">
+                <button class="tag">Alle projecten<span class="material-icons-sharp">
+                    close
+                    </span>
+                    </button>
+                <button class="tag">S3<span class="material-icons-sharp">
+                    close
+                    </span>
+                    </button>
+                <button class="tag">S4<span class="material-icons-sharp">
+                    close
+                    </span>
+                    </button>
+                <button class="button"><span class="material-icons-sharp">
+                    filter_list
+                    </span>Meer filters</button>
+            </div>
+
+
+            <div class="table_wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="select_all">
+                                <span class="material-icons-sharp">
+                                    remove_circle_outline
+                                    </span>
+                                    Bedrijf
+                            </th>
+                            <th>Status</th>
+                            <th>Deelnemers</th>
+                            <th>Challenge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Delta X Solar Team</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
